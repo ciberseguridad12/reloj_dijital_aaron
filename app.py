@@ -1,5 +1,6 @@
 import streamlit as st
 from datetime import datetime
+from zoneinfo import ZoneInfo
 import time
 
 st.set_page_config(page_title="Reloj Digital", page_icon="🕒", layout="centered")
