@@ -28,6 +28,6 @@ st.markdown(
 marcador = st.empty()
 
 while True:
-    hora_actual = datetime.now().strftime("%H:%M:%S")
+    hora_actual = datetime.now(ZoneInfo("America/Merida")).strftime("%H:%M:%S")
     marcador.markdown(f"<div class='reloj'>{hora_actual}</div>", unsafe_allow_html=True)
     time.sleep(1)
